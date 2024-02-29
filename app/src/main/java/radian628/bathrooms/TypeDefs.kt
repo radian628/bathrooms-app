@@ -7,7 +7,7 @@ public enum class BathroomGender {
 }
 
 public class Review(
-    val bathroom_id: String,
+    val bathroomId: String,
 
     // ranges from 1 to 5
     val rating: Double,
@@ -19,7 +19,7 @@ public class Review(
 
     // when the review was posted
     // (Date might be deprecated so I may change this)
-    val posted_at: Date
+    val postedAt: Date
 )
 
 public data class Bathroom(
@@ -31,10 +31,10 @@ public data class Bathroom(
 
     // not sure whether to use building name or an ID linked to it
     // especially since the Locations API doesn't use name
-    val building_id: String,
+    val buildingId: String,
 
     val gender: BathroomGender,
-    val wheelchair_accessible: Boolean,
+    val wheelchairAccessible: Boolean,
 
     // ranges from 1 to 5
     val rating: Double
