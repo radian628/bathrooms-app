@@ -27,7 +27,7 @@ public data class Bathroom(
     val id: String,
 
     // should be same as it appears IRL
-    val room_number: String,
+    val roomNumber: String,
 
     // not sure whether to use building name or an ID linked to it
     // especially since the Locations API doesn't use name

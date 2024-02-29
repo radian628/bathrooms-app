@@ -1,6 +1,7 @@
 package radian628.bathrooms
 
 import android.os.Bundle
+import android.view.View
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -25,3 +26,7 @@ class IndividualBathroomActivity : ComponentActivity() {
         }
     }
 }
+
+// fun populateIndividualBathroomView(view: View, bathroom: Bathroom) {
+//     val genderView =
+// }
