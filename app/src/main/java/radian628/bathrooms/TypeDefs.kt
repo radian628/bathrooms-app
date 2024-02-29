@@ -7,6 +7,8 @@ public enum class BathroomGender {
 }
 
 public class Review(
+    val bathroom_id: String,
+
     // ranges from 1 to 5
     val rating: Double,
 
@@ -18,6 +20,9 @@ public class Review(
 )
 
 public data class Bathroom(
+    // firebase ID for bathroom
+    val id: String,
+
     // should be same as it appears IRL
     val room_number: String,
 
