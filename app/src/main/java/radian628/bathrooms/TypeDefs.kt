@@ -1,8 +1,21 @@
 package radian628.bathrooms
 
+import java.util.Date
+
 public enum class BathroomGender {
     MALE, FEMALE, INCLUSIVE
 }
+
+public class Review(
+    // ranges from 1 to 5
+    val rating: Double,
+
+    val description: String,
+
+    // when the review was posted
+    // (Date might be deprecated so I may change this)
+    val posted_at: Date
+)
 
 public data class Bathroom(
     // should be same as it appears IRL
